@@ -6,14 +6,14 @@ public abstract class Footballer {
 
     private boolean boots;
 
-    private int pace;
+    private int sprintSpeed;
 
 
 // Constructor:
 
-    public Footballer(String name, int pace) {
+    public Footballer(String name, int sprintSpeed) {
         this.name = name;
-        this.pace = pace;
+        this.sprintSpeed = sprintSpeed;
         this.boots = true;
     }
 
@@ -33,21 +33,21 @@ public abstract class Footballer {
         this.boots = boots;
     }
 
-    public int getPace() {
-        return pace;
+    public int getSprintSpeed() {
+        return sprintSpeed;
     }
 
-    public void setPace(int pace) {
-        this.pace = pace;
+    public void setSprintSpeed(int sprintSpeed) {
+        this.sprintSpeed = sprintSpeed;
     }
 
     public String canTalk(){
         return "Hey Ref! That's a foul";
     }
 
-//    public String sprintSpeed(){
-//        return String.format("My sprint speed is %d" this.pace);
-//    }
+    public String sprint(){
+        return String.format("My sprint speed is %d" ,this.sprintSpeed);
+    }
 
 // String. valueOf() and Integer. toString()
 
