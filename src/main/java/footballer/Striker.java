@@ -1,6 +1,8 @@
 package footballer;
 
-public class Striker extends Footballer {
+import interfaces.IPass;
+
+public class Striker extends Footballer implements IPass {
 
     public Striker(String name, int sprintSpeed){
         super(name,sprintSpeed);

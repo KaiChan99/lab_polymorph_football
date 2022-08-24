@@ -58,6 +58,6 @@ public class StrikerTest {
 //        String actual = striker.demandBall("KDB");
 //        assertEquals(expected, actual);
 //    }
-    
+
 
 }

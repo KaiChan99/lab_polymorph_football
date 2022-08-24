@@ -6,6 +6,8 @@ public abstract class Footballer {
 
     private boolean boots;
 
+    private boolean pass;
+
     private int sprintSpeed;
 
 
@@ -15,6 +17,7 @@ public abstract class Footballer {
         this.name = name;
         this.sprintSpeed = sprintSpeed;
         this.boots = true;
+        this.pass = true;
     }
 
     public String getName() {
@@ -31,6 +34,14 @@ public abstract class Footballer {
 
     public void setBoots(boolean boots) {
         this.boots = boots;
+    }
+
+    public boolean getPass() {
+        return pass;
+    }
+
+    public void setPass(boolean pass) {
+        this.pass = pass;
     }
 
     public int getSprintSpeed() {
@@ -51,7 +62,9 @@ public abstract class Footballer {
 
     public abstract String demandBall();
 
-
+public boolean canPass(){
+    return pass;
+}
 
 // String. valueOf() and Integer. toString()
 
