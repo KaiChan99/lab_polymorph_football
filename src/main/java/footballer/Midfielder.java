@@ -8,4 +8,18 @@ public class Midfielder extends Footballer{
 
 
     }
+
+    @Override
+    public int getSprintSpeed() {
+        return super.getSprintSpeed();
+    }
+
+    @Override
+    public void setSprintSpeed(int sprintSpeed) {
+        super.setSprintSpeed(sprintSpeed);
+    }
+
+    public String demandBall(){
+        return "I'm here!";
+    }
 }

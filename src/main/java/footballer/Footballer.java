@@ -49,6 +49,10 @@ public abstract class Footballer {
         return String.format("My sprint speed is %d" ,this.sprintSpeed);
     }
 
+    public abstract String demandBall();
+
+
+
 // String. valueOf() and Integer. toString()
 
 
